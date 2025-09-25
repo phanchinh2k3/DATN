@@ -1,0 +1,20 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "minmea.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        esp_wifi
+        esp_netif
+        esp_event
+        nvs_flash
+        mqtt
+        esp_timer
+        driver
+        sdmmc
+        fatfs
+        i2cdev
+        ina219
+        esp_idf_lib_helpers
+)
